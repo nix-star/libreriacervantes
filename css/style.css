@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+body {
+    overflow-x: hidden;
+}
+
 header {
     background-image: url(../img/banner-libros.jpg);
     display: flex;
@@ -8,10 +14,13 @@ h1 {
     display: inline-block;
     background-color:#800040;
     color: cornsilk;
-    font-weight: 500;
+    font-weight: bold;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
+    margin-bottom: 1px;
     padding: 1.4em;
-    
+    text-align: center;
+    opacity: 0.8;
 }
 
 nav ul {
@@ -40,18 +49,43 @@ nav ul li:first-child a {
 nav ul li a:hover {
     background-color: cornsilk;
     color: cornflowerblue;
+    font-weight: bold;
+}
+
+main {
+    max-width: 815px;
+    margin: auto;
+}
+
+main div {
+    box-sizing: border-box;
 }
 
 .left {
+    padding: 6px;
     background-color: inherit;
-    width: 70%;
+    width: 66%;
     float: left
+}
+
+.left p {
+    text-align: justify;
+}
+
+.left p::first-letter {
+    float: left;
+    font-size: 2em;
+    padding-right: 2px;
 }
 
 .right {
     background-color: inherit;
-    width: 29%;
+    width: 33%;
     float: right;
+}
+
+.right img {
+    width: 100%;
 }
 
 footer {
@@ -61,11 +95,61 @@ footer {
     clear: both;
 }
 
+/*destacados*/
+.destacados {
+    max-width: 100%;
+    /* padding: 0; */
+    /* border: 1px solid red; */
+}
+
+.destacados h2{
+    background-color: skyblue;
+    text-align: center;
+    margin: 0;
+    padding: 0.5em;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+}
+
+.destacados p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.destacados p:first-child {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.destacados .contenedor {
+    display: flex;
+    /* margin: 0;
+    padding: 0; */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* justify-content: flex-start; */
+
+}
+
+.destacados .contenedor figure {
+    width: 256px;
+    border: 1px solid black;
+    background-color: skyblue;
+    margin: 1em;
+    /* margin-bottom: 1em; */
+}
+
+.destacados .contenedor figure img {
+    width: 100%;
+}
+
+/*media query*/
 @media screen and (max-width: 345px){
     nav ul {
         display: block;
-        padding-top: 0;
-        padding-bottom: 0;
+        padding: 0;
+        /* padding-bottom: 0; */
     }
 
     nav ul li a {
@@ -74,9 +158,24 @@ footer {
         /* border: 1px solid black; */
         border: 1px solid cornsilk;
         border-bottom: 0;
+        padding-inline-start: 0;
+        text-align: center;
     }
 
     nav ul li:last-child a {
         border-bottom: 1px solid cornsilk;
+    }
+
+    .left {
+        margin: auto;
+        float: none;
+        width: 90%;
+    }
+
+    .right {
+        clear: both;
+        float: none;
+        margin: auto;
+        /* display: none; */
     }
 }
