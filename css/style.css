@@ -7,7 +7,6 @@ header {
     background-image: url(../img/banner-libros.jpg);
     display: flex;
     justify-content: center;
-    /* padding-bottom: 1px; */
 }
 
 h1 {
@@ -22,40 +21,24 @@ h1 {
     opacity: 0.8;
 }
 
-/* nav ul {
-    list-style-type: none;
-    background-color:cornflowerblue;
-    display: flex;
-    justify-content: center;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    margin: auto;
-    padding-inline-start: 0;
-} */
-
 nav ul {
     list-style-type: none;
     background-color: cornflowerblue;
     display: flex;
     justify-content: center;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: auto;
     padding-bottom: 12px;
-    padding-top: 13px;
+    padding-top: 12px;
     padding-inline-start: 0;
 }
 
 nav ul li a {
     text-decoration: none;
     color: cornsilk;
-    padding: 11px;
-    padding-bottom: 12px;
+    padding: 11px; 
+    padding-bottom: 12px; 
     border: 1px solid cornsilk;
     border-left: 0;
-
-    /* background-color: cornflowerblue; */
-    /* height: 100%; */
-    /* box-sizing: content-box; */
 }
 
 nav ul li:first-child a {
@@ -114,8 +97,6 @@ footer {
 /*destacados*/
 .destacados {
     max-width: 100%;
-    /* padding: 0; */
-    /* border: 1px solid red; */
 }
 
 .destacados h2{
@@ -142,17 +123,13 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    /* justify-content: flex-start;
-    margin: 0;
-    padding: 0; */
 }
 
 .destacados .contenedor figure {
     width: 256px;
     border: 1px solid black;
     background-color: skyblue;
-    margin: 1em;
-    /* margin-bottom: 1em; */
+    margin: 1em;    
 }
 
 .destacados .contenedor figure img {
@@ -164,13 +141,11 @@ footer {
     nav ul {
         display: block;
         padding: 0;
-        /* padding-bottom: 0; */
     }
 
     nav ul li a {
         display: inline-block;
         width: 100%;
-        /* border: 1px solid black; */
         border: 1px solid cornsilk;
         border-bottom: 0;
         padding-inline-start: 0;
@@ -191,6 +166,5 @@ footer {
         clear: both;
         float: none;
         margin: auto;
-        /* display: none; */
     }
 }
