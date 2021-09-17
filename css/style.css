@@ -145,7 +145,7 @@ footer {
 }
 
 /*media query*/
-@media screen and (max-width: 345px){
+@media screen and (max-width: 360px){
     nav ul {
         display: block;
         padding: 0;
