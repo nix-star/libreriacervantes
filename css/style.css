@@ -53,8 +53,9 @@ nav ul li a {
     border: 1px solid cornsilk;
     border-left: 0;
     height: 42px;
-    width: 100px;
+    width: 92px;
     box-sizing: border-box;
+    font-size: 92%;
     /* padding-left: 11px;
     padding-right: 11px;
     padding: 11px;
