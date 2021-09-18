@@ -8,7 +8,6 @@ html {
 }
 
 body {
-    /* max-width: 1072px; */
     max-width: 1152px;
     margin: auto;
     background-color: whitesmoke;
@@ -69,41 +68,14 @@ main div {
     box-sizing: border-box;
 }
 
-.left {
-    padding: 6px;
-    background-color: inherit;
-    width: 66%;
-    float: left
-}
-
-.left p {
-    text-align: justify;
-}
-
-.left p::first-letter {
-    float: left;
-    font-size: 2em;
-    padding-right: 2px;
-}
-
-.right {
-    background-color: inherit;
-    width: 33%;
-    float: right;
-}
-
-.right img {
-    width: 100%;
-}
-
 footer {
     background-color: lightsalmon;
     text-align: center;
-    /* padding-top: 12px; */
     clear: both;
     height: 42px;
     box-sizing: border-box;
     font-size: 0.9em;
+    /* padding-top: 12px; */
 }
 
 .texto-alineado {
@@ -113,6 +85,37 @@ footer {
     flex-direction: column;
 }
 
+
+/*home*/
+#home .left {
+    padding: 6px;
+    background-color: inherit;
+    width: 66%;
+    float: left
+}
+
+#home .left p {
+    text-align: justify;
+}
+
+#home .left p::first-letter {
+    float: left;
+    font-size: 2em;
+    padding-right: 2px;
+}
+
+#home .right {
+    background-color: inherit;
+    width: 33%;
+    float: right;
+}
+
+#home .right img {
+    width: 100%;
+}
+
+
+/*destacados*/
 #destacados h2, #novedades h2{
     background-color: skyblue;
     text-align: center;
@@ -120,10 +123,10 @@ footer {
     font-size: 1.2em;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: normal;
-    /* padding: 0.5em; */
     height: 42px;
     box-sizing: border-box;
     color:dodgerblue;
+    /* padding: 0.5em; */
 }
 
 #destacados p {
@@ -160,6 +163,8 @@ footer {
     font-size: 95%;
 }
 
+
+/*novedades*/
 #novedades .contenedor {
     display: flex;
     width: 90%;
@@ -224,6 +229,11 @@ footer {
     font-size: 90%;
 }
 
+
+/*search*/
+/**/
+
+
 /*media query*/
 @media (max-width: 360px){
     nav ul {
@@ -245,19 +255,23 @@ footer {
         border-bottom: 1px solid cornsilk;
     }
 
-    .left {
+    #home .left {
         margin: auto;
         float: none;
         width: 90%;
     }
 
-    .right {
+    #home .right {
         clear: both;
         float: none;
         margin: auto;
     }
 
-    #novedades .nuevo-libro{
+    #novedades .contenedor {
+        width: 99%;
+    }
+
+    #novedades .nuevo-libro {
         font-size: 85%;
     }
 }
