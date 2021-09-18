@@ -309,6 +309,10 @@ footer {
         font-stretch: condensed;
         font-size: 1.1em !important;
     }
+
+    footer.texto-alineado {
+        font-size: 85% !important;
+    }
 }
 
 @media (max-width: 256px){
