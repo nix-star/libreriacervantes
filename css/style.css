@@ -73,11 +73,6 @@ main div {
     box-sizing: border-box;
 }
 
-/* #home div {
-    margin: 0 !important;
-    padding: 0 !important;
-} */
-
 footer {
     background-color: lightsalmon;
     text-align: center;
@@ -114,26 +109,22 @@ footer {
 }
 
 #home {
-    /* padding-left: 6px;
-    padding-right: 6px; */
     max-width: 960px;
-    box-sizing: content-box;
     margin: auto;
 }
 
 #home h2 {
     background-color: transparent;
+    /* background-color: lightgoldenrodyellow; */
 }
 
 #home div {
     padding: 1em;
-    padding-top: 0.5em;
 }
 
 #home .left {
     width: 67%;
     float: left;
-    /* padding-right: 2em; */
 }
 
 #home .left p {
