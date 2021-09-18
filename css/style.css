@@ -40,11 +40,6 @@ nav ul {
     justify-content: center;
     margin: auto;
     padding: 0;
-    /* padding-bottom: 12px;
-    padding-top: 12px;
-    padding-inline-start: 0;
-    height: 42px;
-    box-sizing: border-box; */
 }
 
 nav ul li a {
@@ -57,10 +52,6 @@ nav ul li a {
     width: 92px;
     box-sizing: border-box;
     font-size: 92%;
-    /* padding-left: 11px;
-    padding-right: 11px;
-    padding: 11px;
-    padding-bottom: 12px; */
 }
 
 nav ul li:first-child a {
@@ -80,7 +71,6 @@ nav ul li a:hover {
 
 main div {
     box-sizing: border-box;
-    /* border: 1px solid red;  */
 }
 
 /* #home div {
@@ -95,7 +85,6 @@ footer {
     height: 42px;
     box-sizing: border-box;
     font-size: 0.9em;
-    /* padding-top: 12px; */
 }
 
 .texto-alineado, nav ul li a {
@@ -115,7 +104,6 @@ footer {
     height: 42px;
     box-sizing: border-box;
     color:dodgerblue;
-    /* padding: 0.5em; */
 }
 
 
@@ -126,8 +114,11 @@ footer {
 }
 
 #home {
-    padding-left: 6px;
-    padding-right: 6px;
+    /* padding-left: 6px;
+    padding-right: 6px; */
+    max-width: 960px;
+    box-sizing: content-box;
+    margin: auto;
 }
 
 #home h2 {
@@ -135,15 +126,14 @@ footer {
 }
 
 #home div {
-    /* padding: 12px;
-    padding-right: 6px; */
-    padding: 12px 6px;
-    /* padding-bottom: 12px; */
+    padding: 1em;
+    padding-top: 0.5em;
 }
 
 #home .left {
     width: 67%;
     float: left;
+    /* padding-right: 2em; */
 }
 
 #home .left p {
@@ -156,20 +146,6 @@ footer {
     padding-right: 2px;
 }
 
-#home .right figcaption {
-    padding: 3px;
-    text-align: center;
-    font-family: 'Roboto Condensed', sans-serif;
-}
-
-#home .right figcaption strong {
-    /* padding-top: 2px; */
-    /* padding-bottom: 100px; */
-    display: block;
-    padding-bottom: 4px;
-    font-size: 120%;
-}
-
 #home .right {
     background-color: inherit;
     width: 33%;
@@ -179,6 +155,18 @@ footer {
 #home .right img {
     width: 100%;
     border-radius: 100%;
+}
+
+#home .right figcaption {
+    padding: 3px;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#home .right figcaption strong {
+    display: block;
+    padding-bottom: 4px;
+    font-size: 120%;
 }
 
 
@@ -302,7 +290,7 @@ footer {
     }
 }
 
-@media (max-width: 360px){
+@media (max-width: 380px){
     body {
         width: 100%;
     }
@@ -322,30 +310,22 @@ footer {
         border-bottom: 1px solid cornsilk;
     }
 
-    /* #home .right {
-        margin: auto;
-        float: none;
-        width: 90%;
-        clear: both;
-    } */
-
     #novedades .contenedor {
         width: 98%;
     }
 
-    #novedades .nuevo-libro {
+    #novedades .nuevo-libro, .texto-alineado {
         font-stretch: condensed;
-        /* font-size: 85%; */
+        font-size: 1.1em !important;
     }
 }
 
 @media (max-width: 256px){
-    .texto-alineado {
-        font-stretch: condensed;
-        /* font-size: 0.8em; */
+    h1 {
+        font-size: 1.75em;
     }
 
-    /* #novedades .nuevo-libro{
-        font-size: 75%;
-    } */
+    #novedades .nuevo-libro, .texto-alineado {
+        font-size: 0.95em !important;
+    }
 }
