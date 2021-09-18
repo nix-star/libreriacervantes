@@ -38,6 +38,7 @@ nav ul {
     display: flex;
     justify-content: center;
     margin: auto;
+    padding: 0;
     /* padding-bottom: 12px;
     padding-top: 12px;
     padding-inline-start: 0;
@@ -49,14 +50,15 @@ nav ul li a {
     text-decoration: none;
     text-align: center;
     color: cornsilk;
-    /* padding: 11px;
-    padding-bottom: 12px; */
     border: 1px solid cornsilk;
     border-left: 0;
     height: 42px;
-    padding-left: 11px;
-    padding-right: 11px;
+    width: 88px;
     box-sizing: border-box;
+    /* padding-left: 11px;
+    padding-right: 11px;
+    padding: 11px;
+    padding-bottom: 12px; */
 }
 
 nav ul li:first-child a {
@@ -241,15 +243,15 @@ footer {
 
 /*media query*/
 @media (max-width: 360px){
+    body {
+        width: 100%;
+    }
+
     nav ul {
-        /* display: block; */
-        padding: 0;
-        /* height: 168px; */
         flex-direction: column;
     }
 
     nav ul li a {
-        /* display: inline-block; */
         width: 100%;
         border: 1px solid cornsilk;
         border-bottom: 0;
