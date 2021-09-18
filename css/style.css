@@ -1,4 +1,5 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 @import url(../font/Open_Sans/OpenSans-Light.ttf);
 @import url(../font/Open_Sans/OpenSans-Regular.ttf);
 @import url(../font/Open_Sans/OpenSans-Bold.ttf);
@@ -79,7 +80,13 @@ nav ul li a:hover {
 
 main div {
     box-sizing: border-box;
+    /* border: 1px solid red;  */
 }
+
+/* #home div {
+    margin: 0 !important;
+    padding: 0 !important;
+} */
 
 footer {
     background-color: lightsalmon;
@@ -113,11 +120,30 @@ footer {
 
 
 /*home*/
+#home div, #home p, #home figure {
+    margin: 0;
+    padding: 0;
+}
+
+#home {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+#home h2 {
+    background-color: transparent;
+}
+
+#home div {
+    /* padding: 12px;
+    padding-right: 6px; */
+    padding: 12px 6px;
+    /* padding-bottom: 12px; */
+}
+
 #home .left {
-    padding: 6px;
-    background-color: inherit;
-    width: 66%;
-    float: left
+    width: 67%;
+    float: left;
 }
 
 #home .left p {
@@ -130,6 +156,20 @@ footer {
     padding-right: 2px;
 }
 
+#home .right figcaption {
+    padding: 3px;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#home .right figcaption strong {
+    /* padding-top: 2px; */
+    /* padding-bottom: 100px; */
+    display: block;
+    padding-bottom: 4px;
+    font-size: 120%;
+}
+
 #home .right {
     background-color: inherit;
     width: 33%;
@@ -138,6 +178,7 @@ footer {
 
 #home .right img {
     width: 100%;
+    border-radius: 100%;
 }
 
 
@@ -248,6 +289,19 @@ footer {
 
 
 /*media query*/
+@media (max-width: 640px){
+    #home .left, #home .right {
+        margin: auto;
+        float: none;
+        width: 90%;
+        font-size: 95%;
+    }
+
+    #home .right {
+        max-width: 260px;
+    }
+}
+
 @media (max-width: 360px){
     body {
         width: 100%;
@@ -268,17 +322,12 @@ footer {
         border-bottom: 1px solid cornsilk;
     }
 
-    #home .left {
+    /* #home .right {
         margin: auto;
         float: none;
         width: 90%;
-    }
-
-    #home .right {
         clear: both;
-        float: none;
-        margin: auto;
-    }
+    } */
 
     #novedades .contenedor {
         width: 98%;
