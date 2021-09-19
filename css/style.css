@@ -19,10 +19,12 @@ header {
     background-image: url(../img/banner-libros.jpg);
     display: flex;
     justify-content: center;
+    align-content: center;
+    flex-direction: row;
 }
 
 h1 {
-    display: inline-block;
+    /* display: inline-block; */
     background-color:#800040;
     color: cornsilk;
     font-weight: bold;
@@ -109,8 +111,9 @@ footer {
 }
 
 #home {
-    max-width: 960px;
+    max-width: 1024px;
     margin: auto;
+    /* position: relative; */
 }
 
 #home h2 {
@@ -160,6 +163,29 @@ footer {
     font-size: 120%;
 }
 
+#home .sitios-externos {
+    clear: both;
+    position: relative;
+    bottom: 0px;
+    font-size: 0.95em;
+}
+
+#home .sitios-externos ul {
+    margin-top: 4px;
+    margin-bottom: 0;
+    padding-left: 1.5em;
+    list-style-type: square;
+}
+
+#home .sitios-externos a {
+    text-decoration: none;
+    color: blue;
+}
+
+#home .sitios-externos a:hover {
+    opacity: 0.6;
+    color: cornflowerblue;
+}
 
 /*destacados*/
 #destacados p {
@@ -202,14 +228,17 @@ footer {
     display: flex;
     width: 90%;
     margin: auto;
-    flex-direction: column;
-    align-content: center;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    /* align-content: center; */
+    justify-content: space-evenly;
     margin-bottom: 1em;
 }
 
 #novedades .contenedor .nuevo-libro {
     border: 4px groove grey;
     margin-top: 1em;
+    max-width: 480px;
 }
 
 #novedades .contenedor .nuevo-libro figure {
@@ -268,6 +297,12 @@ footer {
 
 
 /*media query*/
+@media (max-width: 1082px){
+    #novedades .contenedor .nuevo-libro {
+        max-width: 100%;
+    }
+}
+
 @media (max-width: 640px){
     #home .left, #home .right {
         margin: auto;
@@ -302,12 +337,12 @@ footer {
     }
 
     #novedades .contenedor {
-        width: 98%;
+        width: 99%;
     }
 
     #novedades .nuevo-libro, .texto-alineado {
         font-stretch: condensed;
-        font-size: 1.1em !important;
+        font-size: 1em !important;
     }
 
     footer.texto-alineado {
