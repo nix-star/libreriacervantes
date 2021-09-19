@@ -95,6 +95,7 @@ footer {
     background-color: skyblue;
     text-align: center;
     margin: 0;
+    margin-bottom: 1em;
     font-size: 1.2em;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: normal;
@@ -113,12 +114,13 @@ footer {
 #home {
     max-width: 1024px;
     margin: auto;
-    /* position: relative; */
 }
 
 #home h2 {
-    background-color: transparent;
+    /* background-color: transparent; */
     /* background-color: lightgoldenrodyellow; */
+    background-color: wheat;
+    margin: auto -64px;
 }
 
 #home div {
@@ -232,12 +234,12 @@ footer {
     flex-wrap: wrap;
     /* align-content: center; */
     justify-content: space-evenly;
-    margin-bottom: 1em;
+    /* margin-bottom: 1em; */
 }
 
 #novedades .contenedor .nuevo-libro {
     border: 4px groove grey;
-    margin-top: 1em;
+    margin-bottom: 1em;
     max-width: 480px;
 }
 
@@ -304,6 +306,10 @@ footer {
 }
 
 @media (max-width: 640px){
+    #home h2 {
+        margin: 0;
+    }
+
     #home .left, #home .right {
         margin: auto;
         float: none;
