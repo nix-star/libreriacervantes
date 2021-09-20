@@ -123,7 +123,7 @@ footer {
     margin: auto -64px;
 }
 
-#home div {
+#home div, aside {
     padding: 1em;
 }
 
@@ -144,7 +144,7 @@ footer {
 
 #home .right {
     background-color: inherit;
-    width: 33%;
+    max-width: 30%;
     float: right;
 }
 
@@ -165,26 +165,31 @@ footer {
     font-size: 120%;
 }
 
-#home .sitios-externos {
+aside.sitios-externos {
     clear: both;
     position: relative;
-    bottom: 0px;
+    /* margin-left-max: 64px; */
+    /* top: 0; */
     font-size: 0.95em;
+    max-width: 200px;
+    border: 5px double black;
+    margin: auto;
+    margin-bottom: 1em;
 }
 
-#home .sitios-externos ul {
+aside.sitios-externos ul {
     margin-top: 4px;
     margin-bottom: 0;
     padding-left: 1.5em;
     list-style-type: square;
 }
 
-#home .sitios-externos a {
+aside.sitios-externos a {
     text-decoration: none;
     color: blue;
 }
 
-#home .sitios-externos a:hover {
+aside.sitios-externos a:hover {
     opacity: 0.6;
     color: cornflowerblue;
 }
