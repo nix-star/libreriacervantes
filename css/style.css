@@ -389,6 +389,19 @@ aside.sitios-externos a:hover {
         font-size: 1em !important;
     }
 
+    #search-form * {
+        display: block;
+        width: 95%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #search-form button {
+        width: initial;
+        margin: auto;
+    }
+
     footer.texto-alineado {
         font-size: 85% !important;
     }
@@ -404,17 +417,6 @@ aside.sitios-externos a:hover {
     }
 
     #search-form {
-        min-width: 99%;
-    }
-
-    #search-form * {
-        display: block;
-        width: 98%;
-        text-align: center;
-    }
-
-    #search-form button {
-        width: initial;
-        margin: auto;
+        min-width: 98%;
     }
 }
