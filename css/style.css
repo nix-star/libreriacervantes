@@ -84,6 +84,14 @@ footer {
     font-size: 0.9em;
 }
 
+.iframe {
+    clear: both;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .texto-alineado, nav ul li a {
     display: flex;
     justify-content: center;
