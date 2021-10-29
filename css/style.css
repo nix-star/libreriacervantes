@@ -202,6 +202,7 @@ aside.sitios-externos a:hover {
     color: cornflowerblue;
 }
 
+
 /*destacados*/
 #destacados p {
     margin: 0;
@@ -227,6 +228,13 @@ aside.sitios-externos a:hover {
     background-color: skyblue;
     margin: 0;
     margin-bottom: 1em;
+    transition: filter 0.8s;
+
+}
+
+#destacados .contenedor figure:hover {
+    filter: sepia(35%) contrast(85%);
+    border-color: red;	
 }
 
 #destacados .contenedor figure img {
